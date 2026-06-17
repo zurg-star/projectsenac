@@ -11,11 +11,13 @@ registro_de_clientes = arquivo_de_clientes.readlines()
 arquivo_de_clientes.close()
 
 
-print("1. Nome")
-print("2. Idade")
-print("3. Endereço")
-print("4. Telefone")
-print("5. O que o Cliente comprou")
+print("1. Cliente: *digite*")
+print("     - Nome")
+print("     - Idade")
+print("     - Endereço")
+print("     - Telefone")
+print("     - O que o Cliente comprou")
+print("2. Registro de Clientes")
 pesquisar = input("O que você Procura?:")   
 
 
@@ -30,19 +32,17 @@ for i in registro_de_clientes:
     
 
     if pesquisar == "nome":
-        print(valor[0])
+        print(f"['{valor[0]}']")
     if pesquisar == "idade":
-        print(valor[1])
+        print(f"['{valor[0]}'] tem {valor[1]} anos")
     if pesquisar == "endereço":
-        print(valor[2])
+        print(f"['{valor[0]}'] mora na [{valor[2]}]")
     if pesquisar == "telefone":
-        print(valor[3])
+        print(f"['{valor[0]}'] - [{valor[3]}]")
     if pesquisar == "O que o Cliente comprou":
-        print(valor[4])
+        print(f"['{valor[0]}'] comprou ['{valor[4]}']")
+    if pesquisar == "2":
+        print(registro_de_clientes)
 
 
-
-
-
-
-print(f"Nº de {pesquisar} - {len(registro_de_clientes)}")
+print(f"Nº de clientes: {len(registro_de_clientes)}")
