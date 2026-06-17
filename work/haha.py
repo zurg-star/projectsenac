@@ -16,7 +16,7 @@ print("2. Idade")
 print("3. Endereço")
 print("4. Telefone")
 print("5. O que o Cliente comprou")
-pesquisar = input("O que você Procura?:")   
+pesquisar = int(input("O que você Procura?:   **digite os números correspondentes**"))   
 
 
 
@@ -31,12 +31,19 @@ for i in registro_de_clientes:
     
 
     if pesquisar == 1:
-        print(nome)
+        print(valor[0])
     if pesquisar == 2:
-        print(idade)
-    if pesquisar==3:
-        print(endereço)
-    if pesquisar==4:
-        print(telefone)
-    if pesquisar==5:
-        print(comprou)
+        print(valor[1])
+    if pesquisar == 3:
+        print(valor[2])
+    if pesquisar == 4:
+        print(valor[3])
+    if pesquisar == 5:
+        print(valor[4])
+
+
+
+
+
+
+print(len(registro_de_clientes))
